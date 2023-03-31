@@ -11,3 +11,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 [Libreria de JSON Server](https://github.com/typicode/json-server)
 [Docker JSON Server](https://github.com/clue/docker-json-server)
+
+
+## Execute docker
+- build.cmd
+- run.cmd
