@@ -1,0 +1,48 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Manolito el fuerte"
+    },
+    {
+      "id": 2,
+      "name": "Superman"
+    },
+    {
+      "id": 3,
+      "name": "SpiderMan"
+    },
+    {
+      "id": 4,
+      "name": "CatWoman"
+    },
+    {
+      "id": 5,
+      "name": "Batman"
+    },
+    {
+      "id": 6,
+      "name": "Other6"
+    },
+    {
+      "id": 7,
+      "name": "Other7"
+    },
+    {
+      "id": 8,
+      "name": "Other8"
+    },
+    {
+      "id": 9,
+      "name": "Other9"
+    },
+    {
+      "id": 10,
+      "name": "Other10"
+    },
+    {
+      "id": "11",
+      "name": "ejemplar2"
+    }
+  ]
+}

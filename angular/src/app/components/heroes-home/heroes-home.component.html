@@ -1,0 +1,29 @@
+<p>heroes-home from Alberto Bueno !</p>
+<input type="text" [(ngModel)]="searchTerm" (ngModelChange)="searchByTerm()" placeholder="Search by term " />
+<input
+  type="number"
+  [(ngModel)]="searchId"
+  (ngModelChange)="searchById()"
+  placeholder="Search by id "
+  pattern="[0-9]" />
+
+<table>
+  <thead>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Edit</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hero of paginatedHeroes">
+      <td>{{ hero.id }}</td>
+      <td>{{ hero.name }}</td>
+      <td><button (click)="editHero(hero)">Edit</button></td>
+      <td><button (click)="deleteHero(hero)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="previousPage()">Previous</button>
+<button disabled>{{ currentPage }}</button>
+<button (click)="nextPage()">Next</button>
+<button (click)="createNewHero()">Create new hero</button>

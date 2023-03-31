@@ -1,0 +1,12 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  back:
+    image: "clue/json-server"
+    volumes:
+       - ./angular/heroes.json:/data/db.json
+    ports:
+        - '3000:80'
+  front:
+    build: angular
+    ports:
+        - '8082:4200'

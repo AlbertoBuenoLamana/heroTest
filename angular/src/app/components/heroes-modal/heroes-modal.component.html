@@ -1,0 +1,23 @@
+<div class="modal-header top">
+  <p class="modal-title modalFontsize" id="modal-title"><span></span> Hero modal</p>
+</div>
+<div class="modal-body mid">
+  <p>
+    Id
+    <input
+      type="text"
+      [(ngModel)]="hero.id"
+      (ngModelChange)="hero.id = $event"
+      disabled
+      placeholder="The id will be auto generated" />
+  </p>
+
+  <p>
+    Name
+    <input type="text" [(ngModel)]="hero.name" (ngModelChange)="hero.name = $event" />
+  </p>
+</div>
+<div class="modal-footer bottom">
+  <button (click)="this.activeModal.close(false)">Cancel</button>
+  <button (click)="saveHero()">Save</button>
+</div>
